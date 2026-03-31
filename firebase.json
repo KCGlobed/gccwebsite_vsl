@@ -1,11 +1,16 @@
 {
   "hosting": {
-    "public": "public",
-    "site": "vsl-optin-page-d31a9",
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
 }
