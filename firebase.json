@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "public",
+    "site": "vsl-optin-page-d31a9",
     "ignore": [
       "firebase.json",
       "**/.*",
