@@ -20,3 +20,31 @@
 [debug] [2026-04-01T09:44:27.015Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vsl-optin-page:testIamPermissions [none]
 [debug] [2026-04-01T09:44:27.015Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vsl-optin-page:testIamPermissions  x-goog-user-project=vsl-optin-page
 [debug] [2026-04-01T09:44:27.015Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vsl-optin-page:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-01T09:49:35.518Z] ----------------------------------------------------------------------
+[debug] [2026-04-01T09:49:35.522Z] Command:       /usr/local/bin/node /Users/suneelrajput/.npm-global/bin/firebase deploy --only hosting
+[debug] [2026-04-01T09:49:35.522Z] CLI Version:   15.12.0
+[debug] [2026-04-01T09:49:35.522Z] Platform:      darwin
+[debug] [2026-04-01T09:49:35.522Z] Node Version:  v24.14.0
+[debug] [2026-04-01T09:49:35.522Z] Time:          Wed Apr 01 2026 15:19:35 GMT+0530 (India Standard Time)
+[debug] [2026-04-01T09:49:35.522Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-01T09:49:35.523Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-04-01T09:49:36.099Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-01T09:49:36.099Z] > authorizing via signed-in user (kcglobed@gmail.com)
+[debug] [2026-04-01T09:49:36.099Z] [iam] checking project vsl-optin-page for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-04-01T09:49:36.099Z] Checked if tokens are valid: true, expires at: 1775040266007
+[debug] [2026-04-01T09:49:36.099Z] Checked if tokens are valid: true, expires at: 1775040266007
+[debug] [2026-04-01T09:49:36.100Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vsl-optin-page:testIamPermissions [none]
+[debug] [2026-04-01T09:49:36.100Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vsl-optin-page:testIamPermissions  x-goog-user-project=vsl-optin-page
+[debug] [2026-04-01T09:49:36.100Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vsl-optin-page:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-01T09:49:36.986Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-04-01T09:49:36.986Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-04-01T09:49:37.796Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vsl-optin-page:testIamPermissions 200
+[debug] [2026-04-01T09:49:37.796Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vsl-optin-page:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-04-01T09:49:37.797Z] Checked if tokens are valid: true, expires at: 1775040266007
+[debug] [2026-04-01T09:49:37.797Z] Checked if tokens are valid: true, expires at: 1775040266007
+[debug] [2026-04-01T09:49:37.797Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vsl-optin-page [none]
+[debug] [2026-04-01T09:50:07.799Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/vsl-optin-page, {"headers":{},"method":"GET","signal":{"reason":""}}): AbortError: The user aborted a request.
+[debug] [2026-04-01T09:50:07.800Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/vsl-optin-page (original: The user aborted a request.)
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
