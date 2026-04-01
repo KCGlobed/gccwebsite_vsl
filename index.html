@@ -494,7 +494,10 @@
     </h2>
     
     <p class="subheadline">
-      We Are Getting B.Com Graduates Hired by EY, BCG, Deloitte, JPMorgan & Other Global MNCs — Even Before Training Starts.
+      <!-- We Are Getting B.Com Graduates Hired by EY, BCG, Deloitte, JPMorgan & Other Global MNCs — Even Before Training Starts. -->
+      We Are Getting B. Com Graduates Hired
+      by our hiring partners including EY, BCG, Deloitte, JPMorgan & Other Global MNCs
+      Before Their Training Even Starts.
     </p>
 
     <!-- QUALIFIER — exclusion line like DE Academy -->
@@ -597,7 +600,7 @@
 
   <script>
     let redirectUrl = "https://vsl-final.gccschool.com"
-    let apiUrl = `https://gccschool.com`
+    let apiUrl = `https://gccwebsite-admin-prod-backend-738131651355.asia-south1.run.app`
 
     function openModal() {
       document.getElementById('modalBackdrop').classList.add('open');
@@ -651,7 +654,7 @@
         console.log("API Response:", result);
 
         const params = new URLSearchParams({ ...data, form_id: result.data.id }).toString();
-        window.location.href = `${redirectUrl}?${params}`;
+        // window.location.href = `${redirectUrl}?${params}`;
 
       } catch (err) {
         console.error("Error:", err);
